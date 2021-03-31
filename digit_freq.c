@@ -21,9 +21,11 @@ int main() {
     /* define variable to hold the string input */    
     char string[1000];
     int *ptr;
+    
     /* allocate memory to pointer varible to hol frequencies */ 
     ptr = (int*)calloc(10,sizeof(int));
 
+    // scans string from users STDIN
     scanf("%s", &string);
 
     // define variables

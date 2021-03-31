@@ -5,7 +5,16 @@
 
 #define MIN_ELEMENT 1
 #define MAX_ELEMENT 1000000
-int  sum (int count,...) {
+
+/**
+ * @brief sum function gets number of variables as variadic function 
+ * and returns their sum
+ * @param int count gets number of inputs
+ * @return returns sum of inputed variables
+ * @note 
+ */
+
+int  sum(int count,...) {
   va_list ap;
   int i, sum;
   va_start (ap, count);         /* Initialize the argument list. */
@@ -16,6 +25,14 @@ int  sum (int count,...) {
   va_end (ap);                  /* Clean up. */
   return sum;
 }
+
+/**
+ * @brief min function gets number of variables as variadic function 
+ * and returns their min
+ * @param int count gets number of inputs
+ * @return returns min of inputed variables
+ * @note 
+ */
 
 int min(int count,...) {
   va_list ap;
@@ -31,6 +48,14 @@ int min(int count,...) {
   va_end (ap);                  /* Clean up. */
   return min;
 }
+
+/**
+ * @brief max function gets number of variables as variadic function 
+ * and returns their max
+ * @param int count gets number of inputs
+ * @return returns max of inputed variables
+ * @note 
+ */
 
 int max(int count,...) {
   va_list ap;
