@@ -24,19 +24,6 @@ int main() {
     /* allocate memory to pointer varible to hol frequencies */ 
     ptr = (int*)calloc(10,sizeof(int));
 
-    // /* open file to read the input and assign pointer to it*/
-    // FILE *fptr;
-    // if ((fptr = fopen("digit_freq.in", "r")) == NULL) {
-    //     printf("Error! opening file");
-    //     // Program exits if file pointer returns NULL.
-    //     exit(1);
-    // }
-
-    // // reads text until newline is encountered
-    // fscanf(fptr, "%[^\n]", string);
-    // // close the file
-    // fclose(fptr);
-    // scans string from users STDIN
     scanf("%s", &string);
 
     // define variables
